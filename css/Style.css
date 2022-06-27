@@ -1,0 +1,106 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+#navbarToggleExternalContent {
+  background-color: black;
+}
+
+#navbarToggleExternalContent .nav-start {
+  background-color: black;
+  text-align: center;
+}
+
+#navbarToggleExternalContent .nav-start img {
+  margin-top: 5%;
+  height: 70px;
+  width: 70px;
+}
+
+#navbarToggleExternalContent .nav-start h5 {
+  font-family: font-file-82132;
+  color: #fff;
+  margin-top: 1px;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+#navbarToggleExternalContent .nav-start p {
+  font-family: 'Open Sans';
+  color: #a5a5a5;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+
+#navbarToggleExternalContent .nav-links {
+  background-color: #181818;
+  padding-top: 50px;
+}
+
+#navbarToggleExternalContent .nav-links ul {
+  margin-bottom: 0%;
+  padding-left: 0%;
+}
+
+#navbarToggleExternalContent .nav-links ul li {
+  list-style-type: none;
+  text-align: center;
+}
+
+#navbarToggleExternalContent .nav-links ul li a {
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  display: block;
+  font-size: 1rem;
+  color: #909096;
+  line-height: 3rem;
+  border-bottom: 1px solid #6e6b6b;
+}
+
+#navbarToggleExternalContent .nav-links ul li a:hover {
+  color: aqua;
+}
+
+#navbarToggleExternalContent .socialicons {
+  background-color: #181818;
+  text-align: center;
+}
+
+#navbarToggleExternalContent .socialicons ul {
+  margin-bottom: 0%;
+  padding-left: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+}
+
+#navbarToggleExternalContent .socialicons ul li {
+  list-style-type: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 50px 0px 20px 0px;
+}
+
+#navbarToggleExternalContent .socialicons ul li a {
+  color: #909096;
+  text-decoration: none;
+  padding: 10px;
+}
+
+#navbarToggleExternalContent .socialicons ul li a svg {
+  height: 20px;
+  width: 20px;
+ 
+
+#navbarToggleExternalContent .socialicons ul li a:hover {
+  color: aqua;
+}
+/*# sourceMappingURL=Style.css.map */
