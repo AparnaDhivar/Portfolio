@@ -98,11 +98,115 @@
                   
                 }
 
-                a:hover {
-                    color: aqua;
-                }
+               
+            }
+            a:hover {
+                color: aqua;
             }
         }
     }
 
+}
+}
+
+.navbar{
+    background-color: black;
+}
+
+.IntroDiv{
+    background-color: black;
+    color: #fff;
+    padding-left: 7%;
+    height: 600px;
+    .tags{
+        font-family: 'La Belle Aurore',cursive;
+        color: #515152;
+        font-size: 18px;
+        font-style: italic;
+    }
+    .blast{
+        color: #fff;
+        margin: 0;
+        font-family: font-file-82132;
+        font-weight: bolder;
+        font-size: 6rem;
+        line-height: 5rem;
+       padding: 1%;
+       
+    }
+    .blast:hover{
+        color: aqua;
+    }
+    
+    img{
+        height: 70px;
+        width: 70px;
+        position: relative;
+        top: -23px;
+    }
+    .FSD{
+        font-size: 1.1rem;
+        letter-spacing: 6px;
+        margin-bottom: 0%;
+        display: block;
+        color: #8d8d8d;
+        padding-left: 2%;
+    }
+    .loading {
+        font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+        text-transform:uppercase;
+        width:150px;
+        line-height:50px;
+        
+        transform:translateY(50%);
+        span {
+            position:relative;
+            color:#fff;
+            a{
+                text-decoration: none;
+                color:#fff;
+            }
+          }
+      }
+      
+     
+      .loading:before {
+        content:'';
+        background:#1bc7b9;
+        width:128px;
+        height:36px;
+        display:block;
+        position:absolute;
+        top:0;left:0;right:0;bottom:0;
+        margin:auto;
+        
+        animation:2s loadingBefore infinite ease-in-out;
+      }
+      
+      @keyframes loadingBefore {
+        0%   {transform:translateX(-14px);}
+        50%  {transform:translateX(14px);}
+        100% {transform:translateX(-14px);}
+      }
+      
+      
+      .loading:after {
+        content:'';
+        background:#ff3600;
+        width:14px;
+        height:60px;
+        display:block;
+        position:absolute;
+        top:0;left:0;right:0;bottom:0;
+        margin:auto;
+        opacity:.5;
+        
+        animation:2s loadingAfter infinite ease-in-out;
+      }
+      
+      @keyframes loadingAfter {
+        0%   {transform:translateX(-50px);}
+        50%  {transform:translateX(50px);}
+        100% {transform:translateX(-50px);}
+      }  
 }
