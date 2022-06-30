@@ -497,4 +497,398 @@
   background-color: #08fdd8;
   width: 220px;
 }
+
+.Projects {
+  /* Typography =======================*/
+  /* Headings */
+  /* Main heading for card's front cover */
+  /* Main heading for inside page */
+  /* Mixed */
+  /* For both inside page's main heading and 'view me' text on card front cover */
+  /* Front cover */
+  /* For pricing text on card front cover */
+  /* Back cover */
+  /* For inside page's body text */
+  /* Icons ===========================================*/
+  /* Buttons =================================================*/
+  /* Layout Structure=========================================*/
+  /* Container to hold all cards in one place */
+  /* Card ============================================*/
+  /* Area to hold an individual card */
+  /* A container to hold the flip card and the inside page */
+  /* Flip card - covering both the front and inside front page */
+  /* An outer container to hold the flip card. This excludes the inside page */
+  /* The outer container's visibility is set to hidden. This is to make everything within the container NOT set to hidden  */
+  /* This is done so content in the inside page can be selected */
+  /* An inner container to hold the flip card. This excludes the inside page */
+  /* Styling for the front side of the flip card */
+  /* container for the front side */
+  /* Front side's top section */
+  /* Front card's bottom section */
+  /* Styling for the back side of the flip card */
+  /* Specifically targeting the <video> element */
+  /* Inside page */
+  /* Functionality ====================================*/
+  /* This is to keep the card centered (within its container) when opened */
+  /* When the card is hovered, the flip card container will rotate */
+  /* When the card is hovered, the shadow on the inside page will shrink to the left */
+}
+
+.Projects .card-front__heading {
+  font-size: 1.5rem;
+  margin-top: .25rem;
+}
+
+.Projects .inside-page__heading {
+  padding-bottom: 1rem;
+  width: 100%;
+}
+
+.Projects .inside-page__heading,
+.Projects .card-front__text-view {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-top: .2rem;
+}
+
+.Projects .inside-page__heading--city,
+.Projects .card-front__text-view--city {
+  color: #ff62b2;
+}
+
+.Projects .inside-page__heading--ski,
+.Projects .card-front__text-view--ski {
+  color: #2aaac1;
+}
+
+.Projects .inside-page__heading--beach,
+.Projects .card-front__text-view--beach {
+  color: #fa7f67;
+}
+
+.Projects .inside-page__heading--camping,
+.Projects .card-front__text-view--camping {
+  color: #00b97c;
+}
+
+.Projects .card-front__tp {
+  color: #fafbfa;
+}
+
+.Projects .card-front__text-price {
+  font-size: 1.2rem;
+  margin-top: -.2rem;
+}
+
+.Projects .inside-page__text {
+  color: #333;
+}
+
+.Projects .card-front__icon {
+  fill: #fafbfa;
+  font-size: 3vw;
+  height: 3.25rem;
+  margin-top: -.5rem;
+  width: 3.25rem;
+}
+
+.Projects .inside-page__btn {
+  background-color: transparent;
+  border: 3px solid;
+  border-radius: .5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  overflow: hidden;
+  padding: .7rem .75rem;
+  position: relative;
+  text-decoration: none;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  width: 90%;
+  z-index: 10;
+}
+
+.Projects .inside-page__btn::before {
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  width: 100%;
+  z-index: -1;
+}
+
+.Projects .inside-page__btn--city {
+  border-color: #ff40a1;
+  color: #ff40a1;
+}
+
+.Projects .inside-page__btn--city::before {
+  background-color: #ff40a1;
+}
+
+.Projects .inside-page__btn--ski {
+  border-color: #279eb2;
+  color: #279eb2;
+}
+
+.Projects .inside-page__btn--ski::before {
+  background-color: #279eb2;
+}
+
+.Projects .inside-page__btn--beach {
+  border-color: #fa7f67;
+  color: #fa7f67;
+}
+
+.Projects .inside-page__btn--beach::before {
+  background-color: #fa7f67;
+}
+
+.Projects .inside-page__btn--camping {
+  border-color: #00b97d;
+  color: #00b97d;
+}
+
+.Projects .inside-page__btn--camping::before {
+  background-color: #00b97d;
+}
+
+.Projects .inside-page__btn:hover {
+  color: #fafbfa;
+}
+
+.Projects .inside-page__btn:hover::before {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+.Projects .main {
+  background-color: #1d1d1d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.Projects .card-area {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  height: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 1rem;
+}
+
+.Projects .card-section {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.Projects .card {
+  background-color: rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: -0.1rem 1.7rem 6.6rem -3.2rem rgba(0, 0, 0, 0.5);
+          box-shadow: -0.1rem 1.7rem 6.6rem -3.2rem rgba(0, 0, 0, 0.5);
+  height: 15rem;
+  position: relative;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  width: 15rem;
+}
+
+.Projects .flip-card {
+  height: 15rem;
+  -webkit-perspective: 100rem;
+          perspective: 100rem;
+  position: absolute;
+  right: 0;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  visibility: hidden;
+  width: 15rem;
+  z-index: 100;
+}
+
+.Projects .flip-card > * {
+  visibility: visible;
+}
+
+.Projects .flip-card__container {
+  height: 100%;
+  position: absolute;
+  right: 0;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  width: 100%;
+}
+
+.Projects .card-front,
+.Projects .card-back {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.Projects .card-front img,
+.Projects .card-back img {
+  height: 50px;
+  width: 240px;
+}
+
+.Projects .card-front {
+  background-color: #fafbfa;
+  height: 15rem;
+  width: 15rem;
+}
+
+.Projects .card-front__tp {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 57% 90%, 50% 100%, 43% 90%, 0 90%);
+          clip-path: polygon(0 0, 100% 0, 100% 90%, 57% 90%, 50% 100%, 43% 90%, 0 90%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 12rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: .75rem;
+}
+
+.Projects .card-front__tp--city {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff73b9), to(#ff40a1));
+  background: linear-gradient(to bottom, #ff73b9, #ff40a1);
+}
+
+.Projects .card-front__tp--ski {
+  background: -webkit-gradient(linear, left top, left bottom, from(#47c2d7), to(#279eb2));
+  background: linear-gradient(to bottom, #47c2d7, #279eb2);
+}
+
+.Projects .card-front__tp--beach {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fb9b88), to(#f86647));
+  background: linear-gradient(to bottom, #fb9b88, #f86647);
+}
+
+.Projects .card-front__tp--camping {
+  background: -webkit-gradient(linear, left top, left bottom, from(#00db93), to(#00b97d));
+  background: linear-gradient(to bottom, #00db93, #00b97d);
+}
+
+.Projects .card-front__bt {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Projects .card-back {
+  background-color: #fafbfa;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.Projects .video__container {
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 90% 50%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 90% 50%, 100% 100%, 0% 100%);
+  height: auto;
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.Projects .inside-page {
+  background-color: #fafbfa;
+  -webkit-box-shadow: inset 20rem 0px 5rem -2.5rem rgba(0, 0, 0, 0.25);
+          box-shadow: inset 20rem 0px 5rem -2.5rem rgba(0, 0, 0, 0.25);
+  height: 100%;
+  padding: 1rem;
+  position: absolute;
+  right: 0;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  width: 15rem;
+  z-index: 1;
+}
+
+.Projects .inside-page__container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  text-align: center;
+  width: 100%;
+}
+
+.Projects .card:hover {
+  -webkit-box-shadow: -0.1rem 1.7rem 6.6rem -3.2rem rgba(0, 0, 0, 0.75);
+          box-shadow: -0.1rem 1.7rem 6.6rem -3.2rem rgba(0, 0, 0, 0.75);
+  width: 30rem;
+}
+
+.Projects .card:hover .flip-card__container {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.Projects .card:hover .inside-page {
+  -webkit-box-shadow: inset 1rem 0px 5rem -2.5rem rgba(0, 0, 0, 0.1);
+          box-shadow: inset 1rem 0px 5rem -2.5rem rgba(0, 0, 0, 0.1);
+}
 /*# sourceMappingURL=Style.css.map */
